@@ -1,0 +1,74 @@
+/* Apply a universal margin and padding reset */
+*{
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+}
+body{
+    background-color: burlywood;
+
+}
+.header{
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+.header .logo{
+    cursor: pointer;
+}
+.header .logo {
+    height: 50px;
+    width: 50px;
+    transition: all 0.3s;
+}
+.header .logo:hover{
+    transform: scale(1.2);
+}
+.header .nav-links{
+    list-style: none;
+}
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.header .nav-links a{
+    font-size: 700;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    color: brown;
+    text-decoration: none;
+}
+.header .nav-links li:hover{
+    transform: scale(1.2);
+    color: brown;
+}
+.header .nav-links li:hover a{
+    color: brown;
+}
+.header .btn {
+    font-size: 700;
+    font-weight: 700;
+    color : brown;
+    padding: 9px 25px;
+    border :none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+
+}
+.header .btn:hover{
+    background: brown;
+    color: wheat;
+    transform: scale(1.2);
+}
