@@ -11,6 +11,7 @@ body{
     background-color: burlywood;
 
 }
+/*Nav bar*/
 .header{
     background-color: bisque;
     display: flex;
@@ -46,7 +47,7 @@ body{
     border: none;
     border-radius: 50px;
     color: brown;
-    text-decoration: none;
+    
 }
 .header .nav-links li:hover{
     transform: scale(1.2);
@@ -55,7 +56,13 @@ body{
 .header .nav-links li:hover a{
     color: brown;
 }
-.header .btn {
+
+.menu{
+    display: none;
+}
+
+.header .btn,
+.header .menu button {
     font-size: 700;
     font-weight: 700;
     color : brown;
@@ -67,8 +74,115 @@ body{
     text-decoration: none;
 
 }
-.header .btn:hover{
+.header .btn:hover,
+.header .menu button:hover{
     background: brown;
     color: wheat;
     transform: scale(1.2);
+}
+@media screen and (max-width: 800px) {
+    .header .nav-links{
+        display: none;
+    }
+    .header .btn{
+        display: none;
+    }
+    .header .menu{
+        display: block;
+       
+        font-size: 30px;
+        cursor: pointer;
+    }
+    
+}
+/*Nav bar mobile*/
+.header a{
+    text-decoration: none;
+
+}
+.header .overlay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 205, 106, 0.9);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+.header .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: center;
+}
+.header .overlay .overlay-content a{
+    font-size: 30px;
+    color: brown;
+    text-decoration: none;
+    padding: 10px 0;
+    font-weight: 700;
+}
+.header .overlay a:hover,.header .overlay a:focus{
+    color: wheat;
+}
+.header .overlay .close{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px;
+    color: brown;
+    text-decoration: none;
+}
+
+@media screen and (max-height: 450px) {
+    .header .nav-links{
+        display: none;
+    }
+    .header .btn{
+        display: none;
+    }
+    .header .menu{
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .header .overlay{
+        width: 100%;
+    }
+    .header .overlay-content a{
+        font-size: 30px;
+    }
+    .header .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    
+}
+
+/*background image and hero*/
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 700;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(244, 210, 90, 0.858);
+    position: relative;
+
+}
+.container-background{
+    background-image: url(/img/bread-and-buns.webp);
+    height: 100vh;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
