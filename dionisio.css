@@ -19,7 +19,10 @@ body{
     align-items: center;
     height: 85px;
     padding: 5px 10%;
+    
+    
 }
+/*logo*/
 .header .logo{
     cursor: pointer;
 }
@@ -31,6 +34,7 @@ body{
 .header .logo:hover{
     transform: scale(1.2);
 }
+/*links*/
 .header .nav-links{
     list-style: none;
 }
@@ -56,7 +60,7 @@ body{
 .header .nav-links li:hover a{
     color: brown;
 }
-
+/*contact , menu mobil*/
 .menu{
     display: none;
 }
@@ -178,11 +182,15 @@ body{
     position: relative;
 
 }
-.container-background{
+.container-background {
     background-image: url(/img/bread-and-buns.webp);
-    height: 100vh;
-    width: auto;
+    height: h-screen;
+    width: w-screen;
     background-size: cover;
     background-position: center;
     position: relative;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    
 }
