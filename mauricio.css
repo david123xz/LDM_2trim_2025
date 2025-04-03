@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+body{
+    background-image: url(https://png.pngtree.com/background/20230614/original/pngtree-bakery-with-a-lot-of-bread-and-pastries-picture-image_3496297.jpg); 
+
+}
+
+div{
+    background-color: grey;
+}
+
+#SobreNosotros{
+    background-color: grey;
+    padding-left: 30px;
+    margin-left: 30px;
+}
+
+h1{
+    color: wheat;
+    background-color: black;
+    text-align: center;
+
+}
+
+h2{
+    color: wheat;
+    background-color: black;
+    text-shadow: 2px;
+}
