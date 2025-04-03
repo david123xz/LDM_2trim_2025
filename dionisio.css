@@ -175,15 +175,33 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: brown;
     font-size: 700;
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(244, 210, 90, 0.858);
     position: relative;
 
 }
+.hero .hero-text{
+    background-color: brown;
+    width: 25%;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+    padding: 10 20px;
+    border-radius: 50px;
+    color: wheat;
+    font-size: 700;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(244, 210, 90, 0.858);
+    position: absolute;
+    text-align: center;
+    
+    
+
+}
 .container-background {
-    background-image: url(/img/bread-and-buns.webp);
+    background-image: url(/img/captura.png);
     height: h-screen;
     width: w-screen;
     background-size: cover;
