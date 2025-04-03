@@ -9,17 +9,22 @@
 }
 body{
     background-color: burlywood;
+    padding-top: 60px;
 
 }
 /*Nav bar*/
 .header{
+    position: fixed;
     background-color: bisque;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 85px;
     padding: 5px 10%;
-    
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     
 }
 /*logo*/
@@ -182,6 +187,7 @@ body{
     position: relative;
 
 }
+
 .hero .hero-text{
     background-color: brown;
     width: 25%;
@@ -197,6 +203,17 @@ body{
     position: absolute;
     text-align: center;
     
+}
+/* Estilos para móviles (pantallas menores a 768px) */
+@media screen and (max-width: 768px) {
+    .hero .hero-text {
+        width: 80%; /* Más ancho para adaptarse a pantallas pequeñas */
+        height: auto; /* Ajuste automático */
+        font-size: 16px; /* Reducir el tamaño de fuente */
+        padding: 15px; /* Más padding para mejor apariencia */
+        border-radius: 30px; /* Bordes menos pronunciados */
+        position: relative; /* Puede ajustarse según necesidad */
+    }
 }
 .container-background {
     background-image: url(/img/captura.png);
