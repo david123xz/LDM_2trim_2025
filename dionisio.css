@@ -1,0 +1,212 @@
+/* Apply a universal margin and padding reset */
+*{
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+}
+body{
+    background-color: burlywood;
+
+}
+/*Nav bar*/
+.header{
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+    
+    
+}
+/*logo*/
+.header .logo{
+    cursor: pointer;
+}
+.header .logo {
+    height: 50px;
+    width: 50px;
+    transition: all 0.3s;
+}
+.header .logo:hover{
+    transform: scale(1.2);
+}
+/*links*/
+.header .nav-links{
+    list-style: none;
+}
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.header .nav-links a{
+    font-size: 700;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    color: brown;
+    
+}
+.header .nav-links li:hover{
+    transform: scale(1.2);
+    color: brown;
+}
+.header .nav-links li:hover a{
+    color: brown;
+}
+/*contact , menu mobil*/
+.menu{
+    display: none;
+}
+
+.header .btn,
+.header .menu button {
+    font-size: 700;
+    font-weight: 700;
+    color : brown;
+    padding: 9px 25px;
+    border :none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+
+}
+.header .btn:hover,
+.header .menu button:hover{
+    background: brown;
+    color: wheat;
+    transform: scale(1.2);
+}
+@media screen and (max-width: 800px) {
+    .header .nav-links{
+        display: none;
+    }
+    .header .btn{
+        display: none;
+    }
+    .header .menu{
+        display: block;
+       
+        font-size: 30px;
+        cursor: pointer;
+    }
+    
+}
+/*Nav bar mobile*/
+.header a{
+    text-decoration: none;
+
+}
+.header .overlay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 205, 106, 0.9);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+.header .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: center;
+}
+.header .overlay .overlay-content a{
+    font-size: 30px;
+    color: brown;
+    text-decoration: none;
+    padding: 10px 0;
+    font-weight: 700;
+}
+.header .overlay a:hover,.header .overlay a:focus{
+    color: wheat;
+}
+.header .overlay .close{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px;
+    color: brown;
+    text-decoration: none;
+}
+
+@media screen and (max-height: 450px) {
+    .header .nav-links{
+        display: none;
+    }
+    .header .btn{
+        display: none;
+    }
+    .header .menu{
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .header .overlay{
+        width: 100%;
+    }
+    .header .overlay-content a{
+        font-size: 30px;
+    }
+    .header .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    
+}
+
+/*background image and hero*/
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: brown;
+    font-size: 700;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(244, 210, 90, 0.858);
+    position: relative;
+
+}
+.hero .hero-text{
+    background-color: brown;
+    width: 25%;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 0 0;
+    border-radius: 50px;
+    color: wheat;
+    font-size: 700;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(244, 210, 90, 0.858);
+    position: absolute;
+    text-align: center;
+    
+}
+.container-background {
+    background-image: url(/img/captura.png);
+    height: h-screen;
+    width: w-screen;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    
+}

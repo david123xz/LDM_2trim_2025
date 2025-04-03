@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PACOPAN</title>
+        <link rel="stylesheet" href="dionisio.css">
+    </head>
+    <body>
+        <main>
+            <div class="container-background">
+                <header class="header">
+                    <div>
+                        <img src="/img/logo.jpg" alt="Logo de PACOPAN" class="logo">
+                    </div>
+                    <nav>
+                        <ul class ="nav-links">
+                            <li><a href="#">INICIO</a></li>              
+                            <li><a href="#">SOBRE NOSOTROS</a></li>
+                            <li><a href="#">PRODUCTOS</a></li>            
+                        <ul>
+                    </nav>
+                    <a href="" class="btn">CONTACTO</a>
+
+                    <a onclick="openNav()" href="#" class="menu"><button>Menu</button></a>
+
+                    <div class="overlay" id="mobile-menu">
+                        <a href="" class="close" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <a href="#">INICIO</a>
+                            <a href="#">SOBRE NOSOTROS</a>
+                            <a href="#">PRODUCTOS</a>
+                            <a href="#">CONTACTO</a>
+                        </div>
+                    </div>
+                </header>
+                <section class="hero">
+                    <div class="hero-text">
+                        <h1>Bienvenido a PACOPAN</h1>
+                        <p>La mejor panadería de la ciudad</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <script src="/js/nav.js" type="text/javascript"></script>
+    </body>
+</html>
