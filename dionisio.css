@@ -188,7 +188,7 @@ body{
     height: 10%;
     align-items: center;
     justify-content: center;
-    padding: 10 20px;
+    padding: 10px 0 0 0;
     border-radius: 50px;
     color: wheat;
     font-size: 700;
@@ -197,8 +197,6 @@ body{
     position: absolute;
     text-align: center;
     
-    
-
 }
 .container-background {
     background-image: url(/img/captura.png);
