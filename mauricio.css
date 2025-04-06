@@ -3,11 +3,11 @@ body{
     margin: 0px;
 }
 
-
 h1{
     text-align: center;
     color: #6A4E23;
     background-color: #D4A75B;
+    margin-top: 0px;
     padding: 20px;
     box-sizing: border-box;
     border-bottom-left-radius: 10px;
@@ -20,19 +20,49 @@ h1:hover{
     color: #FAD02E;
 }
 
+.Sobre{
+    list-style-type: none;
+    color: #6A4E23;
+    font-family: 'Merriweather', serif;
+}
+
+.Sobre:hover{
+    color: #D4A75B;
+}
+
 h2{
+    font-family: 'Merriweather', serif;
     color: #B97C53;
 }
 
 .SobreNosotros{
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 80%;
+    padding: 20px;
     
 }
 
 .Texto{
-    width: 50%;
+    color: #3E3E3E;
+    font-family: 'Merriweather', serif;
+    width: 80%;
 }
 
 .Imagen{
-    width: 50%;
+    width: 10%;
+}
+
+.Imagen img{
+    width: 400px;
+    height: 500px;
+}
+
+footer{
+    text-align: center;
+}
+
+footer li{
+    list-style-type: none;
 }
