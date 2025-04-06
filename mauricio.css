@@ -1,0 +1,38 @@
+body{
+    background-color: #F1E6C7;
+    margin: 0px;
+}
+
+
+h1{
+    text-align: center;
+    color: #6A4E23;
+    background-color: #D4A75B;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: 'Lora', serif;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2)
+}
+
+h1:hover{
+    color: #FAD02E;
+}
+
+h2{
+    color: #B97C53;
+}
+
+.SobreNosotros{
+    width: 100%;
+    
+}
+
+.Texto{
+    width: 50%;
+}
+
+.Imagen{
+    width: 50%;
+}
